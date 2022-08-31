@@ -1,5 +1,7 @@
 # Python Package Demo
 
+[![Coverage Status](https://coveralls.io/repos/github/Ori-Roza/py-shannon/badge.svg?branch=main)](https://coveralls.io/github/Ori-Roza/py-shannon?branch=main)
+
 This is a simple example of creating and consuming a distributable Python package. While I find the Python language to be intuitive and useful, for some reason I often struggle with `pip` & packages - both creating them and consuming them. So this is to just be a simple example of how to create and consume a package as a reference for myself.
 
 This is not intended to be a replacement for the [Python Packaging User Guide (PyPUG)](https://packaging.python.org/) and its corresponding [sample project](https://github.com/pypa/sampleproject). I've used that as my primary reference, and I encourage others to do the same. This has a slightly simplified example and a FAQ and Troubleshooting section with some questions and problems I've encountered while exploring Python. Happy to accept PRs for suggested improvements.
