@@ -24,7 +24,8 @@ jobs:
     - name: Test with pytest
       run: |
           pip install pytest-cov
-          python -m pytest shannon/tests --cov=. --cov-report xml
+          python -m coverage run --source=. -m pytest shannon/tests
+          coveralls
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
