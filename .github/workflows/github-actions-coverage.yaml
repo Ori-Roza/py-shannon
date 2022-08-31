@@ -23,8 +23,8 @@ jobs:
         pip install -r requirements.txt
     - name: Test with pytest
       run: |
-        pip install pytest pytest-cov
-        python -m pytest --cov=./myapp --cov-report xml
+         pytest shannon/tests
+         python -m coverage xml
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
