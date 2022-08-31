@@ -22,14 +22,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Test with pytest
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
       run: |
           pip install pytest-cov
           python -m coverage run --source=. -m pytest shannon/tests
           coveralls
     - name: Coveralls
       uses: coverallsapp/github-action@master
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: coverage.xml
